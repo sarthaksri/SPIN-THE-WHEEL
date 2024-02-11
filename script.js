@@ -21,18 +21,8 @@ const spinValues = [
 const size = [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10];
 
 var spinColors = [
-  "#E74C3C",
-  "#7D3C98",
-  "#2E86C1",
-  "#138D75",
-  "#F1C40F",
-  "#D35400",
-  "#138D75",
-  "#F1C40F",
-  "#b163da",
-  "#E74C3C",
-  "#7D3C98",
-  "#138D75",
+  "#400135",
+  "#F2A81D",
 ];
 
 let spinChart = new Chart(spinWheel, {
@@ -68,7 +58,7 @@ let spinChart = new Chart(spinWheel, {
 const generateValue = (angleValue) => {
   for (let i of spinValues) {
     if (angleValue >= i.minDegree && angleValue <= i.maxDegree) {
-      text.innerHTML = `<p>Congratulations, You Have Won $${i.value} ! </p>`;
+      text.innerHTML = <p>Congratulations, You Have Won $${i.value} ! </p>;
       spinBtn.disabled = false;
       break;
     }
@@ -79,7 +69,7 @@ let count = 0;
 let resultValue = 101;
 spinBtn.addEventListener("click", () => {
   spinBtn.disabled = true;
-  text.innerHTML = `<p>Best Of Luck!</p>`;
+  text.innerHTML = <p>Best Of Luck!</p>;
   let randomDegree = Math.floor(Math.random() * (355 - 0 + 1) + 0);
   let rotationInterval = window.setInterval(() => {
     spinChart.options.rotation = spinChart.options.rotation + resultValue;
