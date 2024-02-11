@@ -1,13 +1,12 @@
-
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 
 :root {
+
+    --white_color : rgba(15, 2, 2, 0.66);
+    --gold_color: rgb(255, 102, 0);
+    --green_color: #400135;
     
-    --white_color : rgb(255, 255, 255);
-    --gold_color: rgb(255, 215, 0);
-    --green_color: rgb(45, 252, 26);
-    --body_background: linear-gradient(to right, #141e30, #243b55);
-    --spin_background: linear-gradient(to right, #fc4a1a, #f7b733);
+    --spin_background: linear-gradient(to right, #400135, #F2A81D);
 }
 
 * {
@@ -18,7 +17,7 @@
 }
 body {
   height: 100vh;
-  background: var(--body_background);
+  background: #59024B;
 }
 
 h1 {
@@ -61,8 +60,8 @@ h1 {
   border-radius: 50%;
   cursor: pointer;
   border: 0;
-  background: var(--spin_background);
-  color: var(--white_color);
+  background: #400135;
+  color: #521df2;
   text-transform: uppercase;
   font-size: 1.8rem;
   letter-spacing: 0.1rem;
