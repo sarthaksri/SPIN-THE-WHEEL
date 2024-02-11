@@ -82,3 +82,32 @@ h1 {
   color: var(--gold_color);
   font-weight: 500;
 }
+
+.popup-card {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(242, 168, 29, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(228, 228, 10, 0.5);
+    z-index: 999;
+}
+
+.popup-content {
+    text-align: center;
+}
+
+#close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+#popup-result {
+    font-size: 24px;
+    margin-bottom: 20px;
+}

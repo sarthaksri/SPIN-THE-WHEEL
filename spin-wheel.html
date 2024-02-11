@@ -20,13 +20,22 @@
   <h1>CIRCUITRIX</h1>
   <div class="container">
      <div class="wheel_box">
-      <canvas id="spinWheel"></canvas>
+      <canvas id="spinWheel" width="400" height="400"></canvas>
       <button id="spin_btn"></button>
       <i class="fa-solid fa-location-arrow"></i>
      </div> 
     <div id="text"><p>Wheel Of Fortune</p></div>
   </div>
  
+   <!-- Popup Result Card -->
+   <div class="popup-card" id="popup-card">
+    <div class="popup-content">
+        <span id="close-popup">&times;</span>
+        <div id="popup-result"></div>
+        <button id="spin-again-btn">Spin Again</button>
+    </div>
+</div>
+
   <script src="script.js"></script>  
 </body>   
 </html>
