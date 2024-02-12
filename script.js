@@ -17,8 +17,8 @@ document.addEventListener("DOMContentLoaded", function() {
     { minDegree: 211, maxDegree: 240, value: 800 },
     { minDegree: 181, maxDegree: 210, value: 900 },
     { minDegree: 151, maxDegree: 180, value: 1000 },
-    { minDegree: 121, maxDegree: 150, value: 1100 },
-    { minDegree: 91, maxDegree: 120, value: 1200 },
+    { minDegree: 121, maxDegree: 150, value: 100 },
+    { minDegree: 91, maxDegree: 120, value: 400 },
   ];
 
   const size = [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10];
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
     plugins: [ChartDataLabels],
     type: "pie",
     data: {
-      labels: ["$100", "$200", "$300", "$400", "$500", "$600", "$700", "$800", "$900", "$1000", "$1100", "$1200"],
+      labels: ["$100", "$200", "$300", "$400", "$500", "$600", "$700", "$800", "$900", "$1000", "$100", "$400"],
       datasets: [
         {
           backgroundColor: spinColors,
